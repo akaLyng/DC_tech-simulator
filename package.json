@@ -1,0 +1,33 @@
+{
+  "name": "dc-tech-sim",
+  "private": true,
+  "version": "0.1.0",
+  "description": "First-person data-center technician simulator: fix servers, swap parts and work the helpdesk in a fully simulated terminal. Three.js + Vite.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaLyng/dc-tech-sim.git"
+  },
+  "keywords": [
+    "threejs",
+    "game",
+    "simulator",
+    "data-center",
+    "sysadmin",
+    "networking",
+    "linux",
+    "powershell"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

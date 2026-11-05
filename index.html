@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC Technician Simulator</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div id="hud">
+      <div id="topbar">
+        <div class="brand"><span class="dot"></span>Data Hall 2 · Night shift</div>
+        <div class="status"><span id="mute-chip" class="hidden">Muted</span><span id="ticket-count">1 open ticket</span><span id="clock"></span></div>
+      </div>
+      <div id="crosshair"><span></span></div>
+      <div id="prompt"></div>
+      <div id="resume-hint">Press any key or click to look around</div>
+      <div id="hand"></div>
+      <div id="message" class="message"></div>
+      <div id="toasts"></div>
+      <aside id="ticket-panel" class="hidden"></aside>
+      <div id="keyhint"><kbd>T</kbd> Tickets <kbd>E</kbd> Interact <kbd>Q</kbd> Crouch <kbd>Esc</kbd> Pause</div>
+    </div>
+
+    <div id="overlay" class="hidden">
+      <div class="overlay-card">
+        <div id="overlay-eyebrow" class="eyebrow"></div>
+        <h1 id="overlay-title"></h1>
+        <p id="overlay-lead" class="lead"></p>
+        <button id="overlay-button" class="primary"></button>
+        <div id="pause-menu" class="hidden">
+          <label class="volume" for="volume">
+            <span>Volume</span>
+            <input id="volume" type="range" min="0" max="100" step="1" value="80" />
+            <output id="volume-out">80%</output>
+          </label>
+          <div class="menu-row">
+            <button id="mute-btn" type="button">Mute</button>
+            <button id="fullscreen-btn" type="button">Fullscreen: on</button>
+            <button id="restart-btn" type="button">Restart shift</button>
+            <button id="end-btn" type="button">End shift now</button>
+          </div>
+        </div>
+        <div class="controls">
+          <div><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span>Move</div>
+          <div><span><kbd>Shift</kbd></span>Walk faster</div>
+          <div><span><kbd>Q</kbd></span>Crouch (toggle)</div>
+          <div><span><kbd>M</kbd></span>Mute / unmute sound</div>
+          <div><span><kbd>Mouse</kbd></span>Look around</div>
+          <div><span><kbd>E</kbd></span>Inspect / interact / open a server console</div>
+          <div><span><kbd>Ctrl</kbd><kbd>D</kbd></span><span>Close the console (or type <code>exit</code>, or press Esc)</span></div>
+          <div><span><kbd>Alt</kbd><kbd>H</kbd></span>Toggle the guide in the console</div>
+          <div><span><kbd>T</kbd></span>Toggle ticket panel</div>
+          <div><span><kbd>C</kbd></span>Write summary &amp; close ticket</div>
+          <div><span><kbd>Esc</kbd></span>Pause (in the hall)</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="summary" class="hidden"></div>
+
+    <div id="loading">Racking servers…</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
