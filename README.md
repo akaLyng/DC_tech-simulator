@@ -217,4 +217,4 @@ Adding a ticket is mostly data: a console ticket is one module in `src/scenarios
 
 ## License
 
-[MIT](LICENSE)
+All rights reserved. Free to play for personal use; copying, redistribution and commercial use are not allowed. See [LICENSE](LICENSE).
