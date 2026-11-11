@@ -1,3 +1,4 @@
+# Welcome!
 # Data Center Technician Simulator
 
 A first-person browser game about working a shift as a data-center technician. Walk the hall, find the rack with the amber light, open a console and work out why the server is down, swap a failed disk or PSU from the parts shelf, then pick up the helpdesk phone when a customer calls. Built with Three.js and Vite in plain JavaScript, with no game engine and no art files: every mesh, texture and sound is generated in code.
